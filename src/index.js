@@ -1,5 +1,6 @@
 module.exports = function toReadable (number) {
-  if(number === 0){return 'zero'};
+
+    if(number === 0){return 'zero'};
 
     let lvl_1 = ['', ' one', ' two', ' three', ' four', ' five', ' six', ' seven', ' eight', ' nine'];
     let lvl_2 = ['', '', ' twenty', ' thirty', ' forty', ' fifty', ' sixty', ' seventy', ' eighty', ' ninety'];
@@ -25,7 +26,7 @@ module.exports = function toReadable (number) {
                     }                
                 else if (element.length === 1) { result += lvl_1[el]; }                
             }            
-        });
+        });        
     });
     return result.trim();
 }
